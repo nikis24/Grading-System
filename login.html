@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>Login</title>
+        <link rel="stylesheet" type="text/css" href="login.css">
+    </head>
+    <body>
+        <h1></h1>
+        <div class="reg">
+            <form id="reg" method="post" action="..php">
+                <h2>User Login</h2>
+                
+                <label>Email Id</label><br>
+                <input type="email" name="email" id="email" placeholder="Enter Your Email*" maxlength="50" required>
+                <br><br>
+                <label>Password</label><br>
+                <input type="text" name="name" id="name"  placeholder="Enter Password*" maxlength="100" required>
+                
+                 <script >
+                    function isInputNumber(evt) {
+                        var ch = String.fromCharCode(evt.which);
+                        if(!(/[0-9]/.test(ch))){
+                            evt.preventDefault();
+                        }
+                    }
+                </script>  
+                
+                <br><br>
+                
+                
+                
+            
+                
+            </form>
+
+        </div>
+        <div class="button">
+
+            <a href="grade.html" class="btn">LOGIN</a>>
+    </body>
+    </html>

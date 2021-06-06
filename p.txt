@@ -1,0 +1,20 @@
+
+            if($rnum==0){
+            $stmt->close();
+
+            $stmt= $conn->prepare($INSERT);
+            $stmt->bind_param("sisss", $name, $number, $email, $password, $repassword);
+            $stmt->execute();
+            echo "successfully registered";
+        }else{
+            echo "already registered";
+        } 
+        $stmt->close();
+        $conn->close(); 
+    }
+}else{
+        echo "All fields are required";
+        die();
+    }
+  
+?>

@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" type="text/css" href="registration.css">
+    </head>
+    <body>
+        <h1></h1>
+        <div class="reg">
+            <form id="reg" method="post" action="connect.php">
+                <h2>Register here</h2>
+                <label>Name</label><br>
+                <input type="text" name="name" id="name" required>
+                <br><br>
+                <label>PRN</label><br>
+                <input type="number" name="number" id="number" required>
+                <br><br>
+            
+                <label>Email Id</label><br>
+                <input type="email" name="email" id="email" required>
+                <br><br>
+                <label>Password</label><br>
+                <input type="text" name="password" id="name" required>
+                <br><br>
+                <label>Retype-Password</label><br>
+                <input type="text" name="repassword" id="name" required>
+                <br><br>
+
+                <script >
+                    function isInputNumber(evt) {
+                        var ch = String.fromCharCode(evt.which);
+                        if(!(/[0-9]/.test(ch))){
+                            evt.preventDefault();
+                        }
+                    }
+                </script>  
+                
+                
+            
+                
+            </form>
+
+        </div>
+        <div class="button">
+
+            <a href="login.html" class="btn">REGISTER</a>
+        </div>
+    </body>
+</html>
+	

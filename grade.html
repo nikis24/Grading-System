@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="grade.css">
+	<title>Grade Calculator</title>
+</head>
+<body>
+	<div class="marks-container">
+		<h2>MARKS SHEET</h2>
+		<form>
+			<div class="form-group">
+				<label>CC/HCI</label>
+				<input type="text" id="english" placeholder="00" autocomplete="off">
+			</div>
+			<div class="form-group">
+				<label>SCOA</label>
+				<input type="text" id="hindi" placeholder="00" autocomplete="off">
+			</div>
+			<div class="form-group">
+				<label>ICS</label>
+				<input type="text" id="math" placeholder="00" autocomplete="off">
+			</div>
+			<div class="form-group">
+				<label>ML</label>
+				<input type="text" id="phy" placeholder="00"autocomplete="off">
+			</div>
+			
+			<div class="form-group">
+				<input type="submit" value="calculate" id="submit">
+			</div>
+		</form>
+	</div>
+	<div class="result-container">
+		<div class="result">
+			<h2>Result</h2>
+			<p>Total Marks - <span class="total-marks">000</span> </p>
+			<p>Grade - <span class="grade">A</span> </p>
+			<p>Percentage - <span class="percentage">100%</span> </p>
+		</div>
+	</div>
+</body>
+	<script src="grade.js"></script>
+</html>
